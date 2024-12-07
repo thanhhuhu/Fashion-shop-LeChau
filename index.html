@@ -8,19 +8,23 @@
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
+
+<button id="scrollTopBtn">Lên đầu trang</button>
+
 <div class="top-nav">
     <a href="" class="leftNav"><img src="logo.jpg" alt="" class="img-nav"></a>
     <a href="" class="leftNav"><img src="" alt=""></a>
     <a href="" class="leftNav">Innerwear & Underwear</a>
-    <a href="" class="leftNav">Bras</a>
-    <a href="" class="leftNav">Bra Tops</a>
-    <a href="" class="leftNav">Underwear & Shapewear</a>
-    <a href="" class="leftNav">Leggings & Tightsr</a>
+    <a href="#innerwear" class="leftNav">Bras</a>
+    <a href="#bras" class="leftNav">Bra Tops</a>
+    <a href="#underwear" class="leftNav">Underwear & Shapewear</a>
+    <a href="#legging" class="leftNav">Leggings & Tightsr</a>
     <a href="" class="rightNav"><i class="fa fa-shopping-bag" style="font-size:24px"></i></a>
     <a href="" class="rightNav"><i class="fa fa-heart" style="font-size:24px"></i></a>
     <a href="" class="rightNav"><i class="fa fa-user" style="font-size:30px"></i></a>
     <a href="" class="rightNav"><i class="fa fa-search" style="font-size:30px"></i></a>
 </div>
+
 <div>
     <h1 class="title">All Innerwear & Underwear</h1>
 </div>
@@ -53,48 +57,61 @@
         <h1 class="content">HEATTECH Leggings</h1>
     </div>
 </div>
-<div class="innerwear">
-    <h1 >Innerwear & Underwear</h1>
-    <div class="innerwear-card">
-        <div class="innerwear-card1">
-            <img src="photo5.avif" alt="" style="width:100%">
-           <div>
-               <div class="circle black"></div>
-               <div class="circle grey"></div>
-               <div class="circle pink"></div>
-           </div>
-            <h1 class="">Wireless Bra | 3D Hold</h1>
-            <h1 class="innerwear-card1-price">$29.9</h1>
-            <span class="fa fa-star checked" >4.6(183)</span>
-        </div>
-        <div class="innerwear-card1">
-            <img src="photo6.avif" alt="" style="width:100%">
-            <div>
-                <div class="circle black"></div>
-                <div class="circle grey"></div>
-                <div class="circle pink"></div>
-                <div class="circle blue"></div>
+<br>
+<div class="filter-button">
+    <button class="filter-btn">In-stock: online only <span class="arrow">&#9662;</span></button>
+    <button class="filter-btn selected">Category <span class="arrow">&#9662;</span></button>
+    <button class="filter-btn">Options <span class="arrow">&#9662;</span></button>
+    <button class="filter-btn">Size <span class="arrow">&#9662;</span></button>
+    <button class="filter-btn">Color <span class="arrow">&#9662;</span></button>
+    <button class="filter-btn">Price <span class="arrow">&#9662;</span></button>
+</div>
+<div id="innerwear">
+    <div class="innerwear">
+        <h1 >Innerwear & Underwear</h1>
+        <div class="innerwear-card">
+            <div class="innerwear-card1">
+                <img src="photo5.avif" alt="" style="width:100%">
+                <div>
+                    <div class="circle black"></div>
+                    <div class="circle grey"></div>
+                    <div class="circle pink"></div>
+                </div>
+                <h1 class="">Wireless Bra | 3D Hold</h1>
+                <h1 class="innerwear-card1-price">$29.9</h1>
+                <span class="fa fa-star checked" >4.6(183)</span>
             </div>
-            <h1 class="">Wireless Bra | Bandeau</h1>
-            <h1 class="innerwear-card1-price">$9.9</h1>
-            <h1>Sale</h1>
-            <h1>Online only</h1>
-            <span class="fa fa-star checked" >5.0(9)</span>
-        </div>
-        <div class="innerwear-card1">
-            <img src="photo7.avif" alt="" style="width:100%">
-            <div>
-                <div class="circle black"></div>
-                <div class="circle grey"></div>
-                <div class="circle pink"></div>
-                <div class="circle skyblue"></div>
+            <div class="innerwear-card1">
+                <img src="photo6.avif" alt="" style="width:100%">
+                <div>
+                    <div class="circle black"></div>
+                    <div class="circle grey"></div>
+                    <div class="circle pink"></div>
+                    <div class="circle blue"></div>
+                </div>
+                <h1 class="">Wireless Bra | Bandeau</h1>
+                <h1 class="innerwear-card1-price">$9.9</h1>
+                <h1>Sale</h1>
+                <h1>Online only</h1>
+                <span class="fa fa-star checked" >5.0(9)</span>
             </div>
-            <h1 class="">Wireless Bra | Ultra Relax</h1>
-            <h1 class="innerwear-card1-price">$29.90</h1>
-            <h1>New color</h1>
-            <span class="fa fa-star checked" >4.3(88)</span>
+            <div class="innerwear-card1">
+                <img src="photo7.avif" alt="" style="width:100%">
+                <div>
+                    <div class="circle black"></div>
+                    <div class="circle grey"></div>
+                    <div class="circle pink"></div>
+                    <div class="circle skyblue"></div>
+                </div>
+                <h1 class="">Wireless Bra | Ultra Relax</h1>
+                <h1 class="innerwear-card1-price">$29.90</h1>
+                <h1>New color</h1>
+                <span class="fa fa-star checked" >4.3(88)</span>
+            </div>
         </div>
-        
+</div>
+    <div id="bras">
+        <div><h1>Bras tops</h1></div>
         <div class="innerwear-card">
             <div class="innerwear-card1">
                 <img src="photo9.avif" alt="" style="width:100%">
@@ -147,8 +164,135 @@
                 <h1>Made with recycled materials</h1>
                 <span class="fa fa-star checked" >4.3(11)</span>
             </div>
+        </div>
+    </div>
+    </div>
+<div id="underwear">
+    <div><h1>Underwear</h1></div>
+    <div class="innerwear-card">
+        <div class="innerwear-card1">
+            <img src="photo13.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+            </div>
+            <h1 class="">Ribbed Cropped Sleeveless Bra Top</h1>
+            <h1 class="innerwear-card1-price">$29.9</h1>
+            <span class="fa fa-star checked" >4.6(183)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo14.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle blue"></div>
+            </div>
+            <h1 class="">Halter Neck Sleeveless Bra Top</h1>
+            <h1 class="innerwear-card1-price">$9.9</h1>
+            <h1>Sale</h1>
+            <h1>Online only</h1>
+            <span class="fa fa-star checked" >5.0(9)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo15.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle skyblue"></div>
+            </div>
+            <h1 class="">AIRism Bra Camisole</h1>
+            <h1 class="innerwear-card1-price">$29.90</h1>
+            <h1>New color</h1>
+            <span class="fa fa-star checked" >4.3(88)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo16.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle skyblue"></div>
+            </div>
+            <h1 class="">Wireless Bra | Active</h1>
+            <h1 class="innerwear-card1-price">$29.90</h1>
+            <h1>Made with recycled materials</h1>
+            <span class="fa fa-star checked" >4.3(11)</span>
+        </div>
     </div>
 </div>
+<div id="legging">
+    <div><h1>Leggings & Tights</h1></div>
+    <div class="innerwear-card">
+        <div class="innerwear-card1">
+            <img src="photo17.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+            </div>
+            <h1 class="">Ribbed Cropped Sleeveless Bra Top</h1>
+            <h1 class="innerwear-card1-price">$29.9</h1>
+            <span class="fa fa-star checked" >4.6(183)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo18.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle blue"></div>
+            </div>
+            <h1 class="">Halter Neck Sleeveless Bra Top</h1>
+            <h1 class="innerwear-card1-price">$9.9</h1>
+            <h1>Sale</h1>
+            <h1>Online only</h1>
+            <span class="fa fa-star checked" >5.0(9)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo19.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle skyblue"></div>
+            </div>
+            <h1 class="">AIRism Bra Camisole</h1>
+            <h1 class="innerwear-card1-price">$29.90</h1>
+            <h1>New color</h1>
+            <span class="fa fa-star checked" >4.3(88)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo20.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle skyblue"></div>
+            </div>
+            <h1 class="">Wireless Bra | Active</h1>
+            <h1 class="innerwear-card1-price">$29.90</h1>
+            <h1>Made with recycled materials</h1>
+            <span class="fa fa-star checked" >4.3(11)</span>
+        </div>
+        <div class="innerwear-card1">
+            <img src="photo21.avif" alt="" style="width:100%">
+            <div>
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+                <div class="circle skyblue"></div>
+            </div>
+            <h1 class="">Wireless Bra | Active</h1>
+            <h1 class="innerwear-card1-price">$29.90</h1>
+            <h1>Made with recycled materials</h1>
+            <span class="fa fa-star checked" >4.3(11)</span>
+        </div>
+    </div>
+</div>
+
 </body>
 <script>
     let slideIndex = 1;
@@ -181,5 +325,27 @@
         slides[slideIndex - 1].style.display = "block";
         dots[slideIndex - 1].className += " active";
     }
+    // Lấy nút
+    var scrollTopBtn = document.getElementById("scrollTopBtn");
+
+    // Hiển thị nút khi cuộn xuống 20px từ đầu trang
+    window.onscroll = function() {
+        scrollFunction();
+    };
+
+    function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+            scrollTopBtn.style.display = "block";
+        } else {
+            scrollTopBtn.style.display = "none";
+        }
+    }
+
+    // Khi người dùng nhấp vào nút, cuộn lên đầu trang
+    scrollTopBtn.onclick = function() {
+        window.scrollTo({top: 0, behavior: 'smooth'});
+    };
+
+
 </script>
 </html>
