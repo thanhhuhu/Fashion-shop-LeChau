@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #f4f4f4;
+        margin: 0;
+        padding: 0;
+    }
+
+    .cart-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        padding: 20px;
+        margin: 20px auto;
+        background-color: white;
+        max-width: 1200px;
+        border-radius: 10px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .cart-items, .order-summary {
+        flex: 1 1 45%;
+        margin: 10px;
+    }
+
+    h2 {
+        color: #333;
+    }
+
+    .cart-item, .order-summary {
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .item-details p, .order-summary p {
+        margin: 5px 0;
+    }
+
+    .item-quantity {
+        display: flex;
+        align-items: center;
+    }
+
+    .item-quantity label {
+        margin-right: 10px;
+    }
+
+    .item-quantity input {
+        width: 50px;
+        padding: 5px;
+    }
+
+    .checkout-btn {
+        border: none;
+        padding: 10px 20px;
+        border-radius: 30px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        background-color: black;
+        margin-top: 100px;
+        margin-left: 200px;
+        width: 200px;
+        height: 50px;;
+        color: white;
+    }
+
+    .checkout-btn:hover {
+        background-color: #0056b3;
+    }
+
+</style>
+<body>
+<div class="cart-container">
+    <div class="cart-items">
+        <h2>Shopping Cart</h2>
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="photo30.avif" alt="" style="width: 100px;height: 100px;">
+                <h3>Wireless Bra 3D Hold</h3>
+                <p>Color: 09 BLACK</p>
+                <p>Size: WOMEN 30/32 D DD</p>
+                <p>Price: $29.90</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity1">Quantity: </label>
+                <input type="number" id="quantity1" name="quantity1" value="1">
+            </div>
+            <div class="item-subtotal">
+                <p>Subtotal: $29.90</p>
+            </div>
+        </div>
+        <div class="cart-item">
+            <div class="item-details">
+                <img src="photo31.avif" alt="" style="width: 100px; height: 100px;">
+                <h3>Wireless Bra | Ultra Relax</h3>
+                <p>Color: 60 LIGHT BLUE</p>
+                <p>Size: WOMEN M</p>
+                <p>Price: $29.90</p>
+            </div>
+            <div class="item-quantity">
+                <label for="quantity2">Quantity: </label>
+                <input type="number" id="quantity2" name="quantity2" value="1">
+            </div>
+            <div class="item-subtotal">
+                <p>Subtotal: $29.90</p>
+            </div>
+        </div>
+    </div>
+    <div class="order-summary">
+        <div>
+            <h2>Order Summary</h2>
+            <p>Item(s) subtotal: $59.80</p>
+            <p>Shipping: TBD</p>
+            <p>Subtotal: $59.80</p>
+            <p>Estimated tax: TBD</p>
+            <h3>Order total: $59.80</h3>
+            <p>You are $39.20 (excluding tax) away from free standard shipping.</p>
+            <button class="checkout-btn">CHECKOUT</button>
+        </div>
+    </div>
+</div>
+</body>
+</html>
