@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Fashion-shop</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="card-index.css">
+</head>
+<body>
+<div class="top-nav">
+    <a href="" class="leftNav"><img src="logo.jpg" alt="" class="img-nav"></a>
+    <a href="" class="leftNav"><img src="" alt=""></a>
+    <a href="" class="leftNav">Innerwear & Underwear</a>
+    <a href="#innerwear" class="leftNav">Bras</a>
+    <a href="#bras" class="leftNav">Bra Tops</a>
+    <a href="#underwear" class="leftNav">Underwear & Shapewear</a>
+    <a href="#legging" class="leftNav">Leggings & Tightsr</a>
+    <a href="" class="rightNav"><i class="fa fa-shopping-bag" style="font-size:24px"></i></a>
+    <a href="" class="rightNav"><i class="fa fa-heart" style="font-size:24px"></i></a>
+    <a href="" class="rightNav"><i class="fa fa-user" style="font-size:30px"></i></a>
+    <a href="" class="rightNav"><i class="fa fa-search" style="font-size:30px"></i></a>
+</div>
+<div>
+    <div class="img-container">
+        <div class="img-detail">
+            <img src="photo22.avif" alt="">
+            <img src="photo23.avif" alt="">
+        </div>
+        <div class="details">
+            <h1>Wireless Bras | 3D Hold</h1>
+            <div class="color-options">
+                <div class="circle black"></div>
+                <div class="circle grey"></div>
+                <div class="circle pink"></div>
+            </div>
+            <h1>Size:Women</h1>
+            <div class="size-btn">
+                <button class="size-item" onclick="selectButton(this)">30/32 AAA</button>
+                <button class="size-item" onclick="selectButton(this)">30/32 B C</button>
+                <button class="size-item" onclick="selectButton(this)">30/32 D DD</button>
+                <button class="size-item" onclick="selectButton(this)">30/32 DDD G</button>
+                <button class="size-item" onclick="selectButton(this)">34/36 AA G</button>
+                <button class="size-item" onclick="selectButton(this)">34/36 B C</button>
+                <button class="size-item" onclick="selectButton(this)">34/36 DDD G</button>
+                <button class="size-item" onclick="selectButton(this)">38/40 AA A</button>
+                <button class="size-item" onclick="selectButton(this)">38/40 C</button>
+                <button class="size-item" onclick="selectButton(this)">38/40 B C</button>
+            </div>
+            <h1 class="price">$29.9</h1>
+            <span class="fa fa-star checked" style="font-size: larger" >4.6(183)</span>
+            <div class="add-to-cart">
+                <button class="add-to-cart-btn">ADD TO CART</button>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div style="margin-left: 100px">
+            <img src="photo24.avif" alt="">
+            <img src="photo25.avif" alt="">
+        </div>
+    </div>
+</div>
+<div class="product-description">
+    <h1>Description</h1>
+    <p>Product ID: 469664</p>
+    <hr>
+    <h2>Features</h2>
+    <div class="features-grid">
+        <div class="feature-item">
+            <img src="photo26.avif" alt="Feature 1">
+            <p>The sheet inside the cups supports your changing bust.</p>
+        </div>
+        <div class="feature-item">
+            <img src="photo27.avif" alt="Feature 2">
+            <p>Built-in power netting from the cups to the shoulders. The non-wired design provides support and prevents side spillage.</p>
+        </div>
+        <div class="feature-item">
+            <img src="photo28.avif" alt="Feature 3">
+            <p>Special processing at the back provides support and a smooth fit. Slim adjusters on the shoulder straps ensure a sleek look from the back.</p>
+        </div>
+        <div class="feature-item">
+            <img src="photo29.avif" alt="Feature 4">
+            <p>4 hooks let you adjust the fit.</p>
+        </div>
+    </div>
+</div>
+</body>
+<script>
+    function selectButton(button) {
+        // Xóa trạng thái "selected" khỏi tất cả các nút
+        const buttons = document.querySelectorAll('.size-item');
+        buttons.forEach(btn => btn.classList.remove('selected'));
+
+        // Thêm trạng thái "selected" cho nút được nhấn
+        button.classList.add('selected');
+    }
+</script>
+</html>
